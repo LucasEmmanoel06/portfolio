@@ -1,0 +1,85 @@
+:root {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'InterVariable', sans-serif; }
+}
+
+body {
+    background-color: #25172F;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    padding: 0 2rem;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link span {
+    color: #9B30E6;
+}
+
+.nav-link:hover {
+    color: #9B30E6;
+    transform: translateY(-3px);
+}
+
+.nav-link:hover span {
+    color: #9B30E6;
+}
+
+.about-container {
+    margin: 15rem;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.about-title .small-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-title .large-title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.yellow-text {
+    color: #E7C400;
+}
+
+.gray-text {
+    color: #BEBEBE;
+}
+
+.about-desc {
+    color: #BEBEBE;
+    word-wrap: break-word; /* Permite que o texto quebre automaticamente */
+    max-width: 600px; /* Define um limite máximo de largura para o texto */
+}
